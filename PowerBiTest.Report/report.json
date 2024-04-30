@@ -27,13 +27,22 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"9a016d70016d60a21bff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":62.3626842603059,\"y\":0,\"z\":1,\"width\":100.1582504786731,\"height\":128.5049251424485}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"43a8bd997bd39691660c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":820.1637869385685,\"y\":400.6330019146924,\"z\":2001,\"width\":368.5067706290803,\"height\":149.29248656255047,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"stackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Day\"}],\"Y\":[{\"queryRef\":\"CountNonNull(BQKMonthlyReport.Category)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BQKMonthlyReport\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Reporting Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Reporting Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Reporting Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Reporting Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Reporting Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Reporting Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variation\",\"Property\":\"Reporting Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"BQKMonthlyReport.Reporting Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Reporting Date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Category\"}},\"Function\":5},\"Name\":\"CountNonNull(BQKMonthlyReport.Category)\",\"NativeReferenceName\":\"Count of Category\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 149.29,
+          "width": 368.51,
+          "x": 820.16,
+          "y": 400.63,
+          "z": 2001.00
+        },
+        {
+          "config": "{\"name\":\"9a016d70016d60a21bff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":62.3626842603059,\"y\":0,\"z\":1000,\"width\":100.1582504786731,\"height\":128.5049251424485,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 128.50,
           "width": 100.16,
           "x": 62.36,
           "y": 0.00,
-          "z": 1.00
+          "z": 1000.00
         },
         {
           "config": "{\"name\":\"d663b57a8ca5df512fbf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":181.4187178481626,\"y\":149.29248656255047,\"z\":0,\"width\":279.68719001591734,\"height\":279.68719001591734,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BQKMonthlyReport.Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(BQKMonthlyReport.Value)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BQKMonthlyReport\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Category\"},\"Name\":\"BQKMonthlyReport.Category\",\"NativeReferenceName\":\"Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Value\"}},\"Function\":0},\"Name\":\"Sum(BQKMonthlyReport.Value)\",\"NativeReferenceName\":\"Sum of Value\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Value\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
@@ -45,13 +54,13 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"ecaf561e365a01773a36\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1014.8109529631596,\"y\":24.567118041938684,\"z\":1,\"width\":100.1582504786731,\"height\":149.29248656255047}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'information'\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"ecaf561e365a01773a36\",\"layouts\":[{\"id\":0,\"position\":{\"x\":702.9975316616301,\"y\":0,\"z\":2000,\"width\":100.1582504786731,\"height\":149.29248656255047,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'information'\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 149.29,
           "width": 100.16,
-          "x": 1014.81,
-          "y": 24.57,
-          "z": 1.00
+          "x": 703.00,
+          "y": 0.00,
+          "z": 2000.00
         }
       ],
       "width": 1280.00
